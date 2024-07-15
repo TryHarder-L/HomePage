@@ -1,4 +1,4 @@
-# homePage
+# HomePage
 
 ## 下载与使用
 

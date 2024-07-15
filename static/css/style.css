@@ -1,7 +1,7 @@
 @font-face {
     font-family: "a";
     /*中文字体*/
-    src: url();
+    /*src: url();*/
     font-display: swap;
 }
 
@@ -971,7 +971,7 @@ footer {
     content: attr(data-tip);
     /*background: rgba(0,0,0,.7);*/
     font: 12px Microsoft YaHei;
-    color: var(--white);
+    color: #fff;
     padding: 4px 8px;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0,0,0,.3);

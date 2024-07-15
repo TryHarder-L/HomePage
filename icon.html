@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Font 示例</title>
+    <link rel="stylesheet" href="./static/css/iconfont.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .icon-item {
+            margin: 10px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .icon-item:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .iconfont {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+    <script>
+        const icons = [
+    'icon-moon-clear-fill',
+    'icon-eicon_train-line',
+    'icon-disc-fill',
+    'icon-signal-tower-fill',
+    'icon-search--line',
+    'icon-chat--fill',
+    'icon-apps-fill',
+    'icon-Home',
+    'icon-yingwen',
+    'icon-jianti',
+    'icon-fanti',
+    'icon-aifadian-line',
+    'icon-zhanghao1',
+    'icon-zuozhe',
+    'icon-weixin1',
+    'icon-bianji',
+    'icon-check-circle',
+    'icon-dashboard',
+    'icon-bullseye',
+    'icon-logo-moment',
+    'icon-leetcode',
+    'icon-gitlab',
+    'icon-csdn',
+    'icon-dribbble',
+    'icon-yuque',
+    'icon-linkedin',
+    'icon-youtube',
+    'icon-Instagram',
+    'icon-slack',
+    'icon-baidu',
+    'icon-discord-line',
+    'icon-cnblogs',
+    'icon-juejin',
+    'icon-steam',
+    'icon-telegram',
+    'icon-toutiao',
+    'icon-weixin',
+    'icon-douban',
+    'icon-29',
+    'icon-weixingongzhonghao',
+    'icon-cainixihuan',
+    'icon-eicon_map-2-line1',
+    'icon-yuan',
+    'icon-creative-commons-nd-line',
+    'icon-creative-commons-by-line',
+    'icon-creative-commons-nc-line',
+    'icon-copyright-line',
+    'icon-font',
+    'icon-stopwatch',
+    'icon-file-lines',
+    'icon-square-poll-vertical',
+    'icon-universal-access',
+    'icon-hourglass-start',
+    'icon-tongxunlu07',
+    'icon-arrow-right',
+    'icon-arrow-left',
+    'icon-dice',
+    'icon-copy',
+    'icon-cube',
+    'icon-circle-arrow-right',
+    'icon-clock',
+    'icon-book',
+    'icon-calendar-alt',
+    'icon-eye-outline',
+    'icon-circle-half-stroke',
+    'icon-arrow-up',
+    'icon-file-word',
+    'icon-fire',
+    'icon-dove',
+    'icon-gear',
+    'icon-inbox',
+    'icon-history',
+    'icon-message',
+    'icon-moon',
+    'icon-shapes',
+    'icon-shuffle',
+    'icon-language',
+    'icon-tags',
+    'icon-train',
+    'icon-warning',
+    'icon-circle-arrow-up-right-1',
+    'icon-fish',
+    'icon-envelope',
+    'icon-music',
+    'icon-fan',
+    'icon-heartbeat-bold',
+    'icon-link',
+    'icon-chevron-left',
+    'icon-rocket',
+    'icon-lightbulb',
+    'icon-shoe-prints',
+    'icon-images',
+    'icon-box-archive',
+    'icon-artstation',
+    'icon-paper-plane',
+    'icon-house-chimney',
+    'icon-bars',
+    'icon-arrows-left-right',
+    'icon-book-open',
+    'icon-list-ul',
+    'icon-comment-sms',
+    'icon-angles-right',
+    'icon-tag',
+    'icon-chevron-right',
+    'icon-radio',
+    'icon-forward',
+    'icon-window-restore',
+    'icon-backward',
+    'icon-download',
+    'icon-comment-medical',
+    'icon-paste',
+    'icon-arrow-rotate-right',
+    'icon-play',
+    'icon-circle-xmark',
+    'icon-angle-down',
+    'icon-chart-line',
+    'icon-pencil',
+    'icon-thumbtack',
+    'icon-location-dot',
+    'icon-fw-fire',
+    'icon-calendar-days',
+    'icon-angle-right',
+    'icon-dice-d20',
+    'icon-instagram',
+    'icon-xmark',
+    'icon-spinner',
+    'icon-bullhorn',
+    'icon-stream',
+    'icon-caret-left',
+    'icon-folder-open',
+    'icon-thumbs-up',
+    'icon-angle-double-down',
+    'icon-sign-out-alt',
+    'icon-angle-double-left',
+    'icon-angle-double-right',
+    'icon-angle-left',
+    'icon-fw-eye',
+    'icon-repeat',
+    'icon-shuffle1',
+    'icon-arrows-rotate',
+    'icon-pause',
+    'icon-heartbeat',
+    'icon-heartbeat1',
+    'icon-rss',
+    'icon-qq',
+    'icon-github',
+    'icon-bilibili',
+    'icon-paper-plane1',
+    'icon-hashtag',
+    'icon-hand-heart-fill',
+    'icon-plant-fill',
+    'icon-qrcode',
+    'icon-weibo',
+    'icon-copyright',
+    'icon-bolt',
+    'icon-circle-info',
+    'icon-triangle-exclamation',
+    'icon-circle-check',
+    'icon-circle-minus',
+    'icon-circle-plus',
+    'icon-circle-dot',
+    'icon-scissors',
+    'icon-arrow-down',
+    'icon-dengpao',
+    'icon-danmu',
+    'icon-zonglan',
+    'icon-linggan',
+    'icon-sanmingzhi',
+    'icon-keyboard',
+    'icon-tiktok'
+];
+
+
+        window.onload = function() {
+            const container = document.querySelector('.icon-container');
+            icons.forEach(icon => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.setAttribute('onclick', `copyToClipboard('iconfont ${icon}')`);
+                
+                const iconElement = document.createElement('div');
+                iconElement.className = `iconfont ${icon}`;
+                item.appendChild(iconElement);
+                
+                const nameElement = document.createElement('p');
+                nameElement.textContent = icon;
+                item.appendChild(nameElement);
+                
+                container.appendChild(item);
+            });
+        };
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('class名称已复制到剪贴板: ' + text);
+            }, function(err) {
+                console.error('无法复制文本: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="icon-container"></div>
+</body>
+</html>

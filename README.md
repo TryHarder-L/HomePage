@@ -37,7 +37,7 @@
 
 ## 演示站
 
-[演示站点1](https://lucksss.com)
+[演示站点](https://lucksss.com)
 
 ## 技术栈
 

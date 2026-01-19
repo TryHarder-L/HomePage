@@ -73,12 +73,12 @@
     function getSkill() {
         global $skill;
         foreach ($skill as $item){
-            $skill = $item['skill'];
+            $skillName = $item['skill'];
             $tip = $item['tip'];
             $rate = $item['rate'];
             echo "
             <li>
-                <p class='mimic_outer'>$skill</p>
+                <p class='mimic_outer'>$skillName</p>
                 <div data-tip='$tip' class='progress mimic_outer'>
                     <div class='mimic_outer' style='width: $rate%;'></div>
                 </div>
